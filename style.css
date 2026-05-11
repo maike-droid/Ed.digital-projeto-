@@ -1,17 +1,19 @@
 .foto{
     width: 54%;
-
 }
 
 body {
-    background-color: chocolate;
+    background-color: aqua;
     display: flex;
     margin: 12px;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
- div {
+div {
     margin: 20px;
     padding: 20px;
- }
+}
+
+
