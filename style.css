@@ -12,13 +12,22 @@ header{
 }
 
 nav{
-    margin-top:10px;
+    margin-top:15px;
 }
 
 nav a{
-    color:white;
+    display:inline-block;
+    background-color:#7acb7a;
+    color:black;
     text-decoration:none;
-    margin:10px;
+    padding:8px 15px;
+    margin:5px;
+    border:1px solid green;
+    border-radius:4px;
+}
+
+nav a:hover{
+    background-color:#69b969;
 }
 
 main{
