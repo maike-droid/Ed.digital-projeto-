@@ -1,79 +1,134 @@
 body{
     font-family: Arial, sans-serif;
-    background-color:#dff5df;
-    margin:0;
+    background-color: #dff5df;
+    margin: 0;
 }
+
+/* Cabeçalho */
 
 header{
-    background-color:green;
-    color:white;
-    text-align:center;
-    padding:20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
+/* Menu */
+
 nav{
-    margin-top:15px;
+    text-align: center;
+    margin-top: 15px;
 }
 
 nav a{
-    display:inline-block;
-    background-color:#7acb7a;
-    color:black;
-    text-decoration:none;
-    padding:8px 15px;
-    margin:5px;
-    border:1px solid green;
-    border-radius:4px;
+    display: inline-block;
+    background-color: #9be79b;
+    color: black;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 5px;
+    border: 1px solid green;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 nav a:hover{
-    background-color:#69b969;
+    background-color: #84d884;
 }
+
+/* Conteúdo */
 
 main{
-    width:80%;
-    margin:auto;
+    width: 80%;
+    margin: auto;
 }
+
+/* Seções */
 
 section{
-    background:white;
-    margin-top:20px;
-    padding:20px;
-    border:1px solid gray;
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    margin-top: 20px;
+    padding: 20px;
 }
 
-img{
-    width:180px;
-    display:block;
-    margin:auto;
-}
+/* Títulos */
 
 h2{
-    color:green;
+    background-color: #b9efb9;
+    color: green;
+    padding: 10px;
+    border-left: 6px solid green;
 }
+
+/* Parágrafos */
+
+p{
+    text-align: justify;
+}
+
+/* Listas */
 
 ul{
-    margin-left:20px;
+    margin-left: 20px;
 }
 
+li{
+    margin-bottom: 8px;
+}
+
+/* Imagens */
+
+img{
+    width: 180px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* Tabela */
+
 table{
-    width:100%;
-    border-collapse:collapse;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
 table, th, td{
-    border:1px solid black;
+    border: 1px solid black;
+}
+
+th{
+    background-color: lightgreen;
 }
 
 th, td{
-    padding:8px;
-    text-align:center;
+    padding: 10px;
+    text-align: center;
 }
 
+/* Botões */
+
+.botao{
+    display: inline-block;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.botao:hover{
+    background-color: darkgreen;
+}
+
+/* Rodapé */
+
 footer{
-    background-color:green;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
