@@ -1,166 +1,154 @@
-<header>
-    <h1>Projeto Agrinho</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reciclagem — Projeto Agrinho</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+  <!-- HEADER: cabeçalho com navegação entre as páginas -->
+  <header>
+    <div>
+      <h1>🌱 Projeto Agrinho</h1>
+      <p>Educação Digital e Futuro Sustentável</p>
+    </div>
     <nav>
-        <a href="#reciclagem">Reciclagem</a>
-        <a href="#dicas">Dicas</a>
-        <a href="#curiosidades">Curiosidades</a>
-        <a href="#sobre">Sobre</a>
-        <a href="index.html">Início</a>
+      <a href="#reciclagem">Reciclagem</a>
+      <a href="#dicas">Dicas</a>
+      <a href="#curiosidades">Curiosidades</a>
+      <a href="#sobre">Sobre</a>
+      <a href="index.html">Início</a>
     </nav>
-</header>
-
-<main>
-
-<section id="reciclagem" class="card">
-
-    <h2>O que é reciclagem?</h2>
-
-    <img src="download.png" alt="Reciclagem">
-
-    <p>
-        A reciclagem é o processo de transformar materiais usados em novos
-        produtos. Essa prática ajuda a diminuir a poluição e preservar os
-        recursos naturais.
-    </p>
-
-</section>
-
-<section class="card">
-
-<h2>Materiais recicláveis</h2>
-
-<ul>
-
-<li>Papel</li>
-
-<li>Plástico</li>
-
-<li>Vidro</li>
-
-<li>Metal</li>
-
-</ul>
-
-</section>
-
-<section id="dicas" class="card">
-
-<h2>Dicas para ajudar o meio ambiente</h2>
-
-<ul>
-
-<li>Separar o lixo.</li>
-
-<li>Economizar água.</li>
-
-<li>Economizar energia.</li>
-
-<li>Reutilizar materiais.</li>
-
-<li>Não jogar lixo nas ruas.</li>
-
-<li>Utilizar sacolas reutilizáveis.</li>
-
-</ul>
-
-</section>
-
-<section id="curiosidades" class="card">
-
-<h2>Curiosidades</h2>
-
-<p>O vidro pode ser reciclado diversas vezes.</p>
-
-<p>O alumínio é um dos materiais mais reciclados do Brasil.</p>
-
-<p>Reciclar papel ajuda a preservar árvores.</p>
-
-</section>
-
-<section class="card">
-
-<h2>Tempo de decomposição</h2>
-
-<table>
-
-<tr>
-
-<th>Material</th>
-
-<th>Tempo</th>
-
-</tr>
-
-<tr>
-
-<td>Papel</td>
-
-<td>3 a 6 meses</td>
-
-</tr>
-
-<tr>
-
-<td>Plástico</td>
-
-<td>Mais de 400 anos</td>
-
-</tr>
-
-<tr>
-
-<td>Vidro</td>
-
-<td>Mais de 4.000 anos</td>
-
-</tr>
-
-<tr>
-
-<td>Metal</td>
-
-<td>100 a 500 anos</td>
-
-</tr>
-
-</table>
-
-</section>
-
-<section id="sobre" class="card">
-
-<h2>Sobre o projeto</h2>
-
-<p>
-
-Este trabalho foi desenvolvido para o Projeto Agrinho com o objetivo de
-mostrar a importância da reciclagem e da preservação do meio ambiente.
-
-</p>
-
-<p><strong>Integrantes:</strong></p>
-
-<ul>
-
-<li>Maike</li>
-
-<li>Nome</li>
-
-<li>Nome</li>
-
-<li>Nome</li>
-
-</ul>
-
-</section>
-
-</main>
-
-<footer>
-
-<p>Projeto Agrinho 2026</p>
-
-<p>Desenvolvido pelos alunos.</p>
-
-</footer>
+  </header>
+
+  <!-- HERO: banner de destaque da página -->
+  <div class="hero">
+    <h2>♻️ O que é Reciclagem?</h2>
+    <p>A reciclagem transforma materiais usados em novos produtos, reduzindo a poluição e preservando os recursos naturais.</p>
+  </div>
+
+  <!-- SECTION: materiais recicláveis com cards -->
+  <section id="reciclagem">
+    <h2>Materiais Recicláveis</h2>
+
+    <!-- DIVs usadas como cards para cada material -->
+    <div class="card-grid">
+
+      <div class="cartao">
+        <div class="icone">📄</div>
+        <h3>Papel</h3>
+        <p>Jornais, revistas, caixas e folhas podem ser reciclados.</p>
+      </div>
+
+      <div class="cartao">
+        <div class="icone">🧴</div>
+        <h3>Plástico</h3>
+        <p>Garrafas, embalagens e sacolas plásticas são recicláveis.</p>
+      </div>
+
+      <div class="cartao">
+        <div class="icone">🍶</div>
+        <h3>Vidro</h3>
+        <p>Garrafas e potes de vidro podem ser reciclados várias vezes.</p>
+      </div>
+
+      <div class="cartao">
+        <div class="icone">🥫</div>
+        <h3>Metal</h3>
+        <p>Latas de alumínio e ferro são altamente recicláveis.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: dicas para o meio ambiente -->
+  <section id="dicas">
+    <h2>Dicas para Ajudar o Meio Ambiente</h2>
+    <ul class="lista-dicas">
+      <li>♻️ Separar o lixo corretamente em casa</li>
+      <li>💧 Economizar água no dia a dia</li>
+      <li>💡 Economizar energia elétrica</li>
+      <li>🔁 Reutilizar materiais antes de jogar fora</li>
+      <li>🚯 Não jogar lixo nas ruas</li>
+      <li>👜 Utilizar sacolas reutilizáveis nas compras</li>
+    </ul>
+  </section>
+
+  <!-- SECTION: curiosidades e tabela de decomposição -->
+  <section id="curiosidades">
+    <h2>Curiosidades</h2>
+
+    <!-- DIV para agrupar as curiosidades visualmente -->
+    <div class="card-grid">
+      <div class="cartao">
+        <div class="icone">🍶</div>
+        <h3>Vidro Eterno</h3>
+        <p>O vidro pode ser reciclado diversas vezes sem perder qualidade.</p>
+      </div>
+      <div class="cartao">
+        <div class="icone">🥫</div>
+        <h3>Alumínio Campeão</h3>
+        <p>O alumínio é um dos materiais mais reciclados no Brasil.</p>
+      </div>
+      <div class="cartao">
+        <div class="icone">🌳</div>
+        <h3>Papel e Árvores</h3>
+        <p>Reciclar papel ajuda a preservar florestas e árvores.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 40px;">Tempo de Decomposição</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Tempo de Decomposição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>📄 Papel</td>
+          <td>3 a 6 meses</td>
+        </tr>
+        <tr>
+          <td>🧴 Plástico</td>
+          <td>Mais de 400 anos</td>
+        </tr>
+        <tr>
+          <td>🍶 Vidro</td>
+          <td>Mais de 4.000 anos</td>
+        </tr>
+        <tr>
+          <td>🥫 Metal</td>
+          <td>100 a 500 anos</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION: sobre o projeto e integrantes -->
+  <section id="sobre">
+    <h2>Sobre o Projeto</h2>
+
+    <!-- DIV como caixa de conteúdo visual -->
+    <div class="sobre-box">
+      <p>Este trabalho foi desenvolvido para o <strong>Projeto Agrinho 2026</strong> com o objetivo de mostrar a importância da reciclagem e da preservação do meio ambiente.</p>
+
+      <h3 style="margin-top: 20px; color: #2d6a2d;">Integrantes:</h3>
+      <div class="integrantes">
+        <span class="tag-integrante">Maike</span>
+        <span class="tag-integrante">Matheus Victor</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER: rodapé com créditos e links -->
+  <footer>
+    <p>© 2026 Projeto Agrinho — Desenvolvido pelos alunos</p>
+    <p><a href="index.html">← Voltar para o Início</a></p>
+  </footer>
+
+</body>
+</html>

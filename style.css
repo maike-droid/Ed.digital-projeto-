@@ -1,148 +1,275 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: #dff5df;
-    margin: 0;
+/* --- Reset Geral --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Cabeçalho */
-
-header{
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 4px solid darkgreen;
+/* --- Estilos Base --- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f7f0;
+  color: #1a2e1a;
+  line-height: 1.6;
 }
 
-header h1{
-    margin: 0;
+/* --- HEADER --- */
+header {
+  background-color: #2d6a2d;
+  color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header p{
-    margin-top: 8px;
+header h1 {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-/* Menu */
-
-/* Menu */
-
-nav{
-    margin-top: 20px;
-    text-align: center;
+header p {
+  font-size: 14px;
+  color: #c8e6c8;
 }
 
-nav a{
-    background-color: red !important;
-    color: white !important;
-    padding: 20px !important;
-    display: inline-block !important;
+nav {
+  display: flex;
+  gap: 20px;
 }
 
-nav a:hover{
-    background-color: #84d884;
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
 }
 
-/* Conteúdo */
-
-main{
-    width: 80%;
-    margin: auto;
+nav a:hover {
+  background-color: #4a9e4a;
 }
 
-/* Seções */
-
-section{
-    background-color: white;
-    border: 1px solid #cfcfcf;
-    border-left: 6px solid green;
-    margin-top: 20px;
-    padding: 20px;
+/* --- HERO (Banner principal) --- */
+.hero {
+  background-color: #4a9e4a;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-/* Títulos */
-
-h2{
-    background-color: #b9efb9;
-    color: green;
-    padding: 10px;
-    margin-top: 0;
-    border-left: 5px solid darkgreen;
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Texto */
-
-p{
-    text-align: justify;
-    line-height: 1.5;
+.hero p {
+  font-size: 18px;
+  color: #d4f0d4;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* Listas */
-
-ul{
-    margin-left: 20px;
+/* --- SEÇÕES --- */
+section {
+  padding: 50px 40px;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
 }
 
-li{
-    margin-bottom: 8px;
+section h2 {
+  font-size: 28px;
+  color: #2d6a2d;
+  margin-bottom: 20px;
+  border-left: 5px solid #4a9e4a;
+  padding-left: 14px;
 }
 
-/* Imagens */
-
-img{
-    display: block;
-    width: 180px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+/* --- CARDS (usando div) --- */
+.card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* Tabela */
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
+.cartao {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  border: 2px solid #c8e6c8;
 }
 
-table, th, td{
-    border: 1px solid black;
+.cartao .icone {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-th{
-    background-color: lightgreen;
+.cartao h3 {
+  font-size: 18px;
+  color: #2d6a2d;
+  margin-bottom: 6px;
 }
 
-th, td{
-    padding: 10px;
-    text-align: center;
+.cartao p {
+  font-size: 14px;
+  color: #555;
 }
 
-/* Botões */
-
-.botao{
-    display: inline-block;
-    background-color: green;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin-top: 15px;
-    border-radius: 4px;
+/* --- LISTA DE DICAS --- */
+.lista-dicas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.botao:hover{
-    background-color: darkgreen;
+.lista-dicas li {
+  background-color: #e8f5e8;
+  padding: 14px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #2d6a2d;
+  font-size: 15px;
 }
 
-/* Rodapé */
-
-footer{
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 25px;
+/* --- TABELA --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-footer p{
-    margin: 5px;
+th {
+  background-color: #2d6a2d;
+  color: #ffffff;
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background-color: #f0f7f0;
+}
+
+/* --- SOBRE o PROJETO --- */
+.sobre-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.integrantes {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.tag-integrante {
+  background-color: #2d6a2d;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #1a3d1a;
+  color: #a5c8a5;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #7ec87e;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 6px;
+}
+
+/* --- INDEX PAGE --- */
+.perfis {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.perfil-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 24px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 260px;
+  border: 2px solid #c8e6c8;
+}
+
+.perfil-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4a9e4a;
+  margin-bottom: 14px;
+}
+
+.perfil-card h3 {
+  color: #2d6a2d;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.perfil-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.botao-acessar {
+  display: inline-block;
+  margin-top: 40px;
+  background-color: #2d6a2d;
+  color: #ffffff;
+  padding: 14px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.botao-acessar:hover {
+  background-color: #4a9e4a;
 }
