@@ -1,195 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e8f5e9;
-    color: #333;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #dff5df;
+    margin: 0;
 }
-
-/* Cabeçalho */
 
 header{
-    background-color: #2e7d32;
+    background-color: green;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
 }
-
-header h1{
-    margin-bottom: 10px;
-}
-
-header p{
-    margin-bottom: 15px;
-}
-
-/* Menu */
 
 nav{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 nav a{
     color: white;
     text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
-    transition: 0.3s;
+    margin: 8px;
 }
-
-nav a:hover{
-    color: #c8e6c9;
-}
-
-/* Conteúdo */
 
 main{
-    width: 90%;
-    max-width: 1000px;
+    width: 80%;
     margin: auto;
-    padding: 30px 0;
 }
-
-/* Cards */
 
 .card{
-    background: white;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,.15);
-    transition: .3s;
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
 }
-
-.card:hover{
-    transform: translateY(-4px);
-}
-
-.card h2{
-    color: #2e7d32;
-    margin-bottom: 15px;
-}
-
-.card h3{
-    margin-top: 20px;
-    color: #1b5e20;
-}
-
-.card p{
-    margin-bottom: 15px;
-}
-
-.card ul{
-    margin-left: 20px;
-}
-
-.card li{
-    margin-bottom: 8px;
-}
-
-/* Imagens */
 
 .card img{
+    width: 180px;
     display: block;
     margin: auto;
-    width: 220px;
-    margin-bottom: 20px;
 }
 
-.foto{
-    width: 220px;
-    border-radius: 12px;
+h2{
+    color: green;
 }
-
-/* Botões */
-
-.botao{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 22px;
-    background: #2e7d32;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: .3s;
-}
-
-.botao:hover{
-    background: #1b5e20;
-}
-
-/* Tabela */
 
 table{
     width: 100%;
     border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: lightgreen;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+.botao{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
     margin-top: 15px;
 }
 
-table th{
-    background: #2e7d32;
-    color: white;
-}
-
-table th,
-table td{
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: center;
-}
-
-table tr:nth-child(even){
-    background: #f2f2f2;
-}
-
-/* Rodapé */
-
 footer{
-    background: #2e7d32;
+    background-color: green;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-
-footer p{
-    margin: 5px 0;
-}
-
-/* Responsividade */
-
-@media(max-width:768px){
-
-    nav{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav a{
-        margin: 5px 0;
-    }
-
-    .card{
-        padding: 18px;
-    }
-
-    .card img,
-    .foto{
-        width: 170px;
-    }
-
-    table{
-        font-size: 14px;
-    }
-
+    padding: 15px;
 }
