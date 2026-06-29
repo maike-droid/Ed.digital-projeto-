@@ -1,314 +1,51 @@
-/* --- Reset Geral --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
-/* --- Estilos Base --- */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f7f0;
-  color: #1a2e1a;
-  line-height: 1.6;
-}
+body { font-family:'Segoe UI',sans-serif; background-color:#f0f7f0; color:#1a2e1a; line-height:1.6; }
 
-/* --- HEADER --- */
-header {
-  background-color: #2d6a2d;
-  color: #ffffff;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+header { background-color:#2d6a2d; color:#fff; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; }
+header h1 { font-size:26px; font-weight:bold; letter-spacing:1px; }
+header p { font-size:14px; color:#c8e6c8; }
 
-header h1 {
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
+nav { display:flex; gap:20px; }
+nav a { color:#fff; text-decoration:none; font-size:15px; padding:6px 14px; border-radius:20px; transition:background-color 0.3s; }
+nav a:hover { background-color:#4a9e4a; }
 
-header p {
-  font-size: 14px;
-  color: #c8e6c8;
-}
+.hero { background-color:#4a9e4a; color:#fff; text-align:center; padding:60px 20px; }
+.hero h2 { font-size:36px; margin-bottom:10px; text-shadow:1px 1px 4px rgba(0,0,0,0.3); }
+.hero p { font-size:18px; color:#d4f0d4; max-width:600px; margin:0 auto; }
 
-nav {
-  display: flex;
-  gap: 20px;
-}
+section { padding:50px 40px; max-width:1000px; margin:0 auto 30px auto; }
+section h2 { font-size:28px; color:#2d6a2d; margin-bottom:20px; border-left:5px solid #4a9e4a; padding-left:14px; }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 6px 14px;
-  border-radius: 20px;
-  transition: background-color 0.3s;
-}
+.card-grid { display:flex; gap:20px; flex-wrap:wrap; }
+.cartao { background-color:#fff; border-radius:12px; padding:24px; box-shadow:0 4px 12px rgba(0,0,0,0.1); flex:1; min-width:200px; text-align:center; border:2px solid #c8e6c8; }
+.cartao .icone { font-size:36px; margin-bottom:10px; }
+.cartao h3 { font-size:18px; color:#2d6a2d; margin-bottom:6px; }
+.cartao p { font-size:14px; color:#555; }
 
-nav a:hover {
-  background-color: #4a9e4a;
-}
+.lista-dicas { list-style:none; display:flex; flex-direction:column; gap:12px; }
+.lista-dicas li { background-color:#e8f5e8; padding:14px 20px; border-radius:8px; border-left:4px solid #2d6a2d; font-size:15px; }
 
-/* --- HERO (Banner principal) --- */
-.hero {
-  background-color: #4a9e4a;
-  color: #ffffff;
-  text-align: center;
-  padding: 60px 20px;
-}
+table { width:100%; border-collapse:collapse; margin-top:16px; background-color:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+th { background-color:#2d6a2d; color:#fff; padding:14px 20px; text-align:left; font-size:15px; }
+td { padding:12px 20px; border-bottom:1px solid #e0e0e0; font-size:14px; }
+tr:last-child td { border-bottom:none; }
+tr:hover td { background-color:#f0f7f0; }
 
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-}
+.sobre-box { background-color:#fff; border-radius:12px; padding:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+.integrantes { display:flex; gap:16px; flex-wrap:wrap; margin-top:16px; }
+.tag-integrante { background-color:#2d6a2d; color:#fff; padding:8px 18px; border-radius:20px; font-size:14px; font-weight:bold; }
 
-.hero p {
-  font-size: 18px;
-  color: #d4f0d4;
-  max-width: 600px;
-  margin: 0 auto;
-}
+footer { background-color:#1a3d1a; color:#a5c8a5; text-align:center; padding:30px 20px; font-size:14px; }
+footer a { color:#7ec87e; text-decoration:none; }
+footer a:hover { text-decoration:underline; }
+footer p { margin-top:6px; }
 
-/* --- SEÇÕES --- */
-section {
-  padding: 50px 40px;
-  max-width: 1000px;
-  margin: 0 auto 30px auto;
-}
+.perfis { display:flex; gap:30px; justify-content:center; flex-wrap:wrap; margin-top:30px; }
+.perfil-card { background-color:#fff; border-radius:16px; padding:30px 24px; text-align:center; box-shadow:0 6px 16px rgba(0,0,0,0.1); max-width:260px; border:2px solid #c8e6c8; }
+.perfil-card img { width:70px; height:70px; border-radius:8px; object-fit:cover; border:3px solid #4a9e4a; margin-bottom:12px; }
+.perfil-card h3 { color:#2d6a2d; font-size:20px; margin-bottom:8px; }
+.perfil-card p { font-size:14px; color:#555; }
 
-section h2 {
-  font-size: 28px;
-  color: #2d6a2d;
-  margin-bottom: 20px;
-  border-left: 5px solid #4a9e4a;
-  padding-left: 14px;
-}
-
-/* --- CARDS (usando div) --- */
-.card-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.cartao {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-  border: 2px solid #c8e6c8;
-}
-
-.cartao .icone {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.cartao h3 {
-  font-size: 18px;
-  color: #2d6a2d;
-  margin-bottom: 6px;
-}
-
-.cartao p {
-  font-size: 14px;
-  color: #555;
-}
-
-/* --- LISTA DE DICAS --- */
-.lista-dicas {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.lista-dicas li {
-  background-color: #e8f5e8;
-  padding: 14px 20px;
-  border-radius: 8px;
-  border-left: 4px solid #2d6a2d;
-  font-size: 15px;
-}
-
-/* --- TABELA --- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 16px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-th {
-  background-color: #2d6a2d;
-  color: #ffffff;
-  padding: 14px 20px;
-  text-align: left;
-  font-size: 15px;
-}
-
-td {
-  padding: 12px 20px;
-  border-bottom: 1px solid #e0e0e0;
-  font-size: 14px;
-}
-
-tr:last-child td {
-  border-bottom: none;
-}
-
-tr:hover td {
-  background-color: #f0f7f0;
-}
-
-/* --- SOBRE o PROJETO --- */
-.sobre-box {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.integrantes {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 16px;
-}
-
-.tag-integrante {
-  background-color: #2d6a2d;
-  color: #ffffff;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/* --- FOOTER --- */
-footer {
-  background-color: #1a3d1a;
-  color: #a5c8a5;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 14px;
-}
-
-footer a {
-  color: #7ec87e;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer p {
-  margin-top: 6px;
-}
-
-/* --- INDEX PAGE --- */
-.perfis {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.perfil-card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 30px 24px;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  max-width: 260px;
-  border: 2px solid #c8e6c8;
-}
-
-.perfil-card img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #4a9e4a;
-  margin-bottom: 12px;
-}
-
-.perfil-card h3 {
-  color: #2d6a2d;
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.perfil-card p {
-  font-size: 14px;
-  color: #555;
-}
-
-.botao-acessar {
-  display: inline-block;
-  margin-top: 40px;
-  background-color: #2d6a2d;
-  color: #ffffff;
-  padding: 14px 36px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s;
-}
-
-.botao-acessar:hover {
-  background-color: #4a9e4a;
-}
-
-/* --- ÁREA DE ACESSO COM RETÂNGULOS VERDES --- */
-.area-acesso {
-  text-align: center;
-  margin-top: 50px;
-  padding: 40px 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.retangulos {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.retangulo {
-  background-color: #2d6a2d;
-  border-radius: 8px;
-  height: 14px;
-}
-
-.retangulo.grande {
-  width: 180px;
-}
-
-.retangulo.medio {
-  width: 120px;
-  background-color: #4a9e4a;
-}
-
-.retangulo.pequeno {
-  width: 70px;
-  background-color: #7ec87e;
-}
+.botao-acessar { display:inline-block; margin-top:40px; background-color:#2d6a2d; color:#fff; padding:14px 36px; border-radius:30px; text-decoration:none; font-size:16px; font-weight:bold; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:background-color 0.3s; }
+.botao-acessar:hover { background-color:#4a9e4a; }
