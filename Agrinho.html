@@ -7,162 +7,101 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div>
-      <h1>🌱 Projeto Agrinho</h1>
-      <p>Educação Digital e Futuro Sustentável</p>
-    </div>
-    <nav class="nav-botoes">
-      <a href="#reciclagem" class="nav-botao nav-botao--claro">♻️ Reciclagem</a>
-      <a href="#dicas" class="nav-botao nav-botao--escuro">💡 Dicas</a>
-      <a href="#curiosidades" class="nav-botao nav-botao--claro">🔍 Curiosidades</a>
-      <a href="#sobre" class="nav-botao nav-botao--escuro">📋 Sobre</a>
-      <a href="index.html" class="nav-botao nav-botao--claro-alt">🏠 Início</a>
-    </nav>
-  </header>
 
-  <div class="hero">
-    <div class="hero__conteudo">
-      <div class="hero__texto">
-        <h2>♻️ O que é Reciclagem?</h2>
-        <p>Reciclar é separar materiais como papel, plástico, vidro e metal do lixo comum para que eles sejam reprocessados e transformados em matéria-prima nova — ao invés de irem parar em aterros, rios ou terrenos baldios. O processo passa por coleta seletiva, triagem, lavagem e reprocessamento industrial, até virar produto novo outra vez. O resultado: menos poluição, menos extração de recursos naturais e um planeta com mais tempo de vida útil.</p>
-      </div>
-      <img src="Fotos-Sobre-Reciclagem-2.jpg" alt="Foto sobre reciclagem" class="hero__imagem">
+  <div class="topo">
+    <h1>🌱 Projeto Agrinho</h1>
+    <p>Educação Digital e Futuro Sustentável</p>
+    <p class="linha-nav">
+      <a href="#reciclagem">♻️ Reciclagem</a>
+      <a href="#dicas">💡 Dicas</a>
+      <a href="#curiosidades">🔍 Curiosidades</a>
+      <a href="#sobre">📋 Sobre</a>
+      <a href="index.html">🏠 Início</a>
+    </p>
+  </div>
+
+  <div class="bloco" id="reciclagem-topo">
+    <p class="titulo-bloco">♻️ O que é Reciclagem?</p>
+    <p>Reciclar é separar materiais como papel, plástico, vidro e metal do lixo comum para que eles sejam reprocessados e transformados em matéria-prima nova — ao invés de irem parar em aterros, rios ou terrenos baldios. O processo passa por coleta seletiva, triagem, lavagem e reprocessamento industrial, até virar produto novo outra vez. O resultado: menos poluição, menos extração de recursos naturais e um planeta com mais tempo de vida útil.</p>
+  </div>
+
+  <div class="bloco duas-colunas" id="reciclagem">
+    <div class="coluna-texto">
+      <p class="titulo-bloco">Materiais Recicláveis</p>
+      <p>Separar certo é o primeiro passo. Veja o que pode ganhar uma nova vida:</p>
+
+      <p class="item-titulo">📄 Papel</p>
+      <p>Jornais, revistas, caixas e folhas viram papel novo em poucas semanas de processo.</p>
+
+      <p class="item-titulo">🧴 Plástico</p>
+      <p>Garrafas, embalagens e sacolas plásticas podem virar desde fibra de roupa até novos potes.</p>
+
+      <p class="item-titulo">🍶 Vidro</p>
+      <p>Garrafas e potes de vidro se reciclam infinitas vezes, sem nunca perder qualidade.</p>
+
+      <p class="item-titulo">🥫 Metal</p>
+      <p>Latas de alumínio e ferro estão entre os materiais mais reciclados do mundo.</p>
+    </div>
+    <div class="coluna-imagens">
+      <img src="reciclagem-classificacao-do-lixo_78370-2519.avif" alt="Lixeiras coloridas para papel, metal, plástico e vidro">
+      <img src="conjunto-de-triagem-de-lixo_74855-15415.avif" alt="Conjunto de itens recicláveis sobre lixeiras de triagem">
     </div>
   </div>
 
-  <div class="divisor-secao divisor-secao--clara">
-    <span class="barra barra--curta"></span>
-    <span class="barra barra--media"></span>
-    <span class="barra barra--longa"></span>
-    <span class="barra barra--media"></span>
-    <span class="barra barra--curta"></span>
+  <div class="bloco duas-colunas" id="dicas">
+    <div class="coluna-texto">
+      <p class="titulo-bloco">Dicas para Ajudar o Meio Ambiente</p>
+      <p>Pequenas mudanças de hábito que fazem diferença de verdade:</p>
+      <p>♻️ Separe o lixo em casa antes de descartar</p>
+      <p>💧 Feche a torneira enquanto ensaboa a louça ou escova os dentes</p>
+      <p>💡 Desligue luzes e aparelhos que não estão em uso</p>
+      <p>🔁 Dê uma segunda vida a potes, caixas e embalagens</p>
+      <p>🚯 Nunca jogue lixo nas ruas — ele pode entupir bueiros e poluir rios</p>
+      <p>👜 Troque sacolas plásticas por sacolas reutilizáveis</p>
+    </div>
+    <div class="coluna-imagens">
+      <img src="reciclagem_aa8234b03b.webp" alt="Pessoas em volta de um globo com símbolo de reciclagem">
+    </div>
   </div>
 
-  <section id="reciclagem">
-    <h2>Materiais Recicláveis</h2>
-    <div class="reciclagem__conteudo">
-      <div class="reciclagem__texto">
-        <p>Separar certo é o primeiro passo. Veja o que pode ganhar uma nova vida:</p>
-        <div class="card-grid">
-          <div class="cartao">
-            <div class="icone">📄</div>
-            <h3>Papel</h3>
-            <p>Jornais, revistas, caixas e folhas viram papel novo em poucas semanas de processo.</p>
-          </div>
-          <div class="cartao">
-            <div class="icone">🧴</div>
-            <h3>Plástico</h3>
-            <p>Garrafas, embalagens e sacolas plásticas podem virar desde fibra de roupa até novos potes.</p>
-          </div>
-          <div class="cartao">
-            <div class="icone">🍶</div>
-            <h3>Vidro</h3>
-            <p>Garrafas e potes de vidro se reciclam infinitas vezes, sem nunca perder qualidade.</p>
-          </div>
-          <div class="cartao">
-            <div class="icone">🥫</div>
-            <h3>Metal</h3>
-            <p>Latas de alumínio e ferro estão entre os materiais mais reciclados do mundo.</p>
-          </div>
-        </div>
-      </div>
-      <div class="reciclagem__imagens">
-        <img src="reciclagem-classificacao-do-lixo_78370-2519.avif" alt="Lixeiras coloridas para papel, metal, plástico e vidro">
-        <img src="conjunto-de-triagem-de-lixo_74855-15415.avif" alt="Conjunto de itens recicláveis sobre lixeiras de triagem">
-      </div>
-    </div>
-  </section>
+  <div class="bloco duas-colunas" id="curiosidades">
+    <div class="coluna-texto">
+      <p class="titulo-bloco">Curiosidades</p>
 
-  <div class="divisor-secao divisor-secao--escura">
-    <span class="barra barra--media-escura"></span>
-    <span class="barra barra--longa-escura"></span>
-    <span class="barra barra--media-escura"></span>
+      <p class="item-titulo">Vidro Eterno</p>
+      <p>O vidro é reciclável infinitas vezes, sem nunca perder qualidade.</p>
+
+      <p class="item-titulo">Alumínio Campeão</p>
+      <p>O alumínio é um dos materiais mais reciclados do Brasil — e um dos mais rápidos de reprocessar.</p>
+
+      <p class="item-titulo">Papel e Árvores</p>
+      <p>Cada tonelada de papel reciclado ajuda a preservar cerca de 22 árvores.</p>
+    </div>
+    <div class="coluna-texto">
+      <p class="titulo-bloco">Tempo de Decomposição</p>
+      <p>Quanto mais devagar um material desaparece na natureza, mais tempo ele passa poluindo. Compare:</p>
+      <p>Papel — 3 a 6 meses</p>
+      <p>Plástico — mais de 400 anos</p>
+      <p>Vidro — mais de 4.000 anos</p>
+      <p>Metal — 100 a 500 anos</p>
+    </div>
   </div>
 
-  <section id="dicas">
-    <h2>Dicas para Ajudar o Meio Ambiente</h2>
-    <div class="dicas__conteudo">
-      <div class="dicas__texto">
-        <p>Pequenas mudanças de hábito que fazem diferença de verdade:</p>
-        <ul class="lista-dicas">
-          <li>♻️ Separe o lixo em casa antes de descartar</li>
-          <li>💧 Feche a torneira enquanto ensaboa a louça ou escova os dentes</li>
-          <li>💡 Desligue luzes e aparelhos que não estão em uso</li>
-          <li>🔁 Dê uma segunda vida a potes, caixas e embalagens</li>
-          <li>🚯 Nunca jogue lixo nas ruas — ele pode entupir bueiros e poluir rios</li>
-          <li>👜 Troque sacolas plásticas por sacolas reutilizáveis</li>
-        </ul>
-      </div>
-      <img src="reciclagem_aa8234b03b.webp" alt="Pessoas em volta de um globo com símbolo de reciclagem" class="dicas__imagem">
+  <div class="bloco duas-colunas" id="sobre">
+    <div class="coluna-texto">
+      <img src="download.png" alt="Símbolo da reciclagem" class="icone-sobre">
     </div>
-  </section>
-
-  <div class="divisor-secao divisor-secao--clara">
-    <span class="barra barra--curta"></span>
-    <span class="barra barra--media"></span>
-    <span class="barra barra--longa"></span>
-    <span class="barra barra--media"></span>
-    <span class="barra barra--curta"></span>
+    <div class="coluna-texto">
+      <p class="titulo-bloco">Sobre o Projeto</p>
+      <p>Este trabalho foi desenvolvido para o Projeto Agrinho 2026, com o objetivo de mostrar como pequenas atitudes de reciclagem e consumo consciente ajudam a preservar o meio ambiente para as próximas gerações.</p>
+      <p>Integrantes: Maike, Matheus Victor</p>
+    </div>
   </div>
 
-  <section id="curiosidades">
-    <h2>Curiosidades</h2>
-    <div class="card-grid">
-      <div class="cartao">
-        <div class="icone">🍶</div>
-        <h3>Vidro Eterno</h3>
-        <p>O vidro é reciclável infinitas vezes, sem nunca perder qualidade.</p>
-      </div>
-      <div class="cartao">
-        <div class="icone">🥫</div>
-        <h3>Alumínio Campeão</h3>
-        <p>O alumínio é um dos materiais mais reciclados do Brasil — e um dos mais rápidos de reprocessar.</p>
-      </div>
-      <div class="cartao">
-        <div class="icone">🌳</div>
-        <h3>Papel e Árvores</h3>
-        <p>Cada tonelada de papel reciclado ajuda a preservar cerca de 22 árvores.</p>
-      </div>
-    </div>
-
-    <h2 class="titulo-secundario">Tempo de Decomposição</h2>
-    <p>Quanto mais devagar um material desaparece na natureza, mais tempo ele passa poluindo. Compare:</p>
-    <table>
-      <thead><tr><th>Material</th><th>Tempo de Decomposição</th></tr></thead>
-      <tbody>
-        <tr><td>📄 Papel</td><td>3 a 6 meses</td></tr>
-        <tr><td>🧴 Plástico</td><td>Mais de 400 anos</td></tr>
-        <tr><td>🍶 Vidro</td><td>Mais de 4.000 anos</td></tr>
-        <tr><td>🥫 Metal</td><td>100 a 500 anos</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <div class="divisor-secao divisor-secao--escura">
-    <span class="barra barra--media-escura"></span>
-    <span class="barra barra--longa-escura"></span>
-    <span class="barra barra--media-escura"></span>
-  </div>
-
-  <section id="sobre">
-    <h2>Sobre o Projeto</h2>
-    <div class="sobre-box sobre-box--com-imagem">
-      <div>
-        <p>Este trabalho foi desenvolvido para o <strong>Projeto Agrinho 2026</strong>, com o objetivo de mostrar como pequenas atitudes de reciclagem e consumo consciente ajudam a preservar o meio ambiente para as próximas gerações.</p>
-        <h3 class="titulo-integrantes">Integrantes:</h3>
-        <div class="integrantes">
-          <span class="tag-integrante">Maike</span>
-          <span class="tag-integrante">Matheus Victor</span>
-        </div>
-      </div>
-      <img src="download.png" alt="Símbolo da reciclagem" class="sobre-box__icone">
-    </div>
-  </section>
-
-  <footer>
+  <div class="rodape">
     <p>© 2026 Projeto Agrinho</p>
     <p><a href="index.html">← Voltar para o Início</a></p>
-  </footer>
+  </div>
+
 </body>
 </html>
