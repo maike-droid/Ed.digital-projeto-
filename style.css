@@ -1,414 +1,98 @@
-/* =========================================================
-   PROJETO AGRINHO — Educação Digital e Futuro Sustentável
-   ========================================================= */
-
-:root {
-  --verde-mata: #1B4332;
-  --verde-folha: #3F8F5B;
-  --verde-brotinho: #8FD19E;
-  --areia: #F5F1E6;
-  --areia-escura: #E8E0CC;
-  --terra: #6F4E37;
-  --grafite: #22301F;
-  --branco: #FFFFFF;
-
-  --fonte-titulo: 'Segoe UI', Arial, sans-serif;
-  --fonte-corpo: 'Segoe UI', Arial, sans-serif;
-}
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
-
 body {
-  font-family: var(--fonte-corpo);
-  background-color: var(--areia);
-  color: var(--grafite);
-  line-height: 1.65;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  background-color: #cdeecb;
+  color: #1a2e1a;
+  text-align: center;
+  line-height: 1.6;
 }
 
-h1, h2, h3 { font-family: var(--fonte-titulo); color: var(--verde-mata); }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-a { color: inherit; }
+img { max-width: 100%; display: block; }
 
-:focus-visible { outline: 3px solid var(--verde-brotinho); outline-offset: 3px; }
+/* --- Bloco do topo (título / nav) ------------------------------------- */
+.topo { padding: 30px 20px 10px; }
+.topo h1 { font-size: 22px; }
+.topo p { font-size: 15px; margin-top: 4px; }
+.subtitulo { font-weight: bold; margin-top: 10px; }
+.linha-nav a { margin: 0 10px; font-size: 15px; }
 
-/* --- Header --------------------------------------------------------- */
-header {
-  background-color: var(--verde-mata);
-  color: #fff;
-  padding: 1.5rem 2.5rem;
+/* --- Linha de perfis (usa a largura toda da tela) ----------------------- */
+.linha-perfis {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  padding: 30px 6%;
+  gap: 20px;
 }
 
-header h1 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.01em;
-}
-
-header p { font-size: 0.85rem; color: var(--verde-brotinho); margin-top: 0.15rem; }
-
-nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-
-nav a {
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #fff;
-  padding: 0.4rem 0.2rem;
-  border-bottom: 2px solid transparent;
-}
-nav a:hover { border-color: var(--verde-brotinho); color: var(--verde-brotinho); }
-
-/* --- Nav em botões (página de reciclagem) ---------------------------- */
-.nav-botoes { gap: 0.65rem; }
-
-.nav-botao {
-  text-decoration: none;
-  padding: 0.55rem 1.1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-  border-bottom: none;
-}
-
-.nav-botao--claro { background-color: var(--verde-folha); color: #fff; }
-.nav-botao--escuro { background-color: var(--verde-mata); color: #fff; border: 1px solid rgba(255,255,255,0.25); }
-.nav-botao--claro-alt { background-color: var(--verde-brotinho); color: var(--verde-mata); }
-
-/* --- Hero ------------------------------------------------------------- */
-.hero {
-  background: linear-gradient(135deg, var(--verde-folha), var(--verde-mata));
-  color: #fff;
-  text-align: center;
-  padding: 4.5rem 1.5rem;
-}
-
-.hero h2 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  color: #fff;
-  margin-bottom: 0.75rem;
-}
-
-.hero p {
-  font-size: 1.05rem;
-  color: var(--areia);
-  max-width: 620px;
-  margin: 0 auto;
-  opacity: 0.95;
-}
-
-/* --- Divisores decorativos ("linha do crescimento") -------------------- */
-.divisor-secao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 1.5rem 0;
-}
-.divisor-secao--clara { background-color: var(--areia); }
-.divisor-secao--escura { background-color: var(--areia-escura); }
-
-.barra { height: 10px; border-radius: 6px; }
-.barra--curta { width: 50px; background-color: var(--verde-brotinho); }
-.barra--media { width: 100px; background-color: var(--verde-folha); }
-.barra--longa { width: 160px; background-color: var(--verde-mata); }
-.barra--media-escura { width: 100px; background-color: var(--verde-folha); }
-.barra--longa-escura { width: 160px; background-color: var(--verde-mata); }
-
-/* --- Seções ------------------------------------------------------------ */
-section {
-  padding: 4rem 2.5rem;
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
-section > p { max-width: 65ch; color: var(--terra); }
-
-section h2 {
-  font-size: 1.85rem;
-  margin-bottom: 1.5rem;
-  border-left: 5px solid var(--verde-folha);
-  padding-left: 0.9rem;
-}
-
-.titulo-secundario { margin-top: 3rem; }
-
-/* --- Cards de materiais / curiosidades --------------------------------- */
-.card-grid { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
-
-.cartao {
-  background-color: var(--branco);
+.perfil { text-align: center; }
+.perfil img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
   border-radius: 6px;
-  padding: 1.75rem;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-  flex: 1;
-  min-width: 210px;
-  text-align: center;
-  border: 1px solid var(--areia-escura);
 }
+.perfil p { margin-top: 8px; font-size: 15px; }
 
-.cartao .icone { font-size: 2.1rem; margin-bottom: 0.65rem; }
-.cartao h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
-.cartao p { font-size: 0.9rem; color: var(--terra); }
+.icone-central { width: 140px; height: 140px; object-fit: contain; }
 
-/* --- Lista de dicas ------------------------------------------------------ */
-.lista-dicas {
-  list-style: none;
+.lista-materiais-lateral {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
-  margin-top: 1.5rem;
-}
-
-.lista-dicas li {
-  background-color: var(--branco);
-  padding: 1rem 1.4rem;
-  border-radius: 10px;
-  border-left: 4px solid var(--verde-mata);
-  font-size: 0.95rem;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-}
-
-/* --- Tabela --------------------------------------------------------------- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1.5rem;
-  background-color: var(--branco);
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-}
-
-th {
-  background-color: var(--verde-mata);
-  color: #fff;
-  padding: 1rem 1.4rem;
-  text-align: left;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-td { padding: 0.9rem 1.4rem; border-bottom: 1px solid var(--areia-escura); font-size: 0.9rem; }
-tr:last-child td { border-bottom: none; }
-tr:hover td { background-color: var(--areia); }
-
-/* --- Sobre o projeto -------------------------------------------------------- */
-.sobre-box {
-  background-color: var(--branco);
-  border-radius: 6px;
-  padding: 2rem;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-}
-
-.sobre-box p { color: var(--grafite); }
-
-.titulo-integrantes { margin-top: 1.5rem; color: var(--verde-mata); font-size: 1.1rem; }
-
-.integrantes { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
-
-.tag-integrante {
-  background-color: var(--verde-mata);
-  color: #fff;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-/* --- Footer ------------------------------------------------------------------ */
-footer {
-  background-color: var(--verde-mata);
-  color: var(--verde-brotinho);
-  text-align: center;
-  padding: 2rem 1.5rem;
-  font-size: 0.9rem;
-}
-footer a { color: var(--verde-brotinho); text-decoration: none; font-weight: 600; }
-footer a:hover { text-decoration: underline; }
-footer p { margin-top: 0.4rem; }
-footer p:first-child { margin-top: 0; }
-
-/* --- Perfis (integrantes na página inicial) ---------------------------------- */
-.perfis { display: flex; gap: 1.75rem; justify-content: center; flex-wrap: wrap; margin-top: 2.25rem; }
-
-.perfil-card {
-  background-color: var(--branco);
-  border-radius: 6px;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-  max-width: 260px;
-  border: 1px solid var(--areia-escura);
-}
-
-
-.perfil-card img {
-  width: 80px;
-  height: 80px;
-  border-radius: 6px;
-  object-fit: cover;
-  border: 3px solid var(--verde-folha);
-  margin-bottom: 0.9rem;
-}
-
-.perfil-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
-.perfil-card p { font-size: 0.9rem; color: var(--terra); }
-
-/* --- Frase de missão + prévia dos materiais --------------------------------- */
-.missao { text-align: center; margin-top: 3rem; }
-
-.missao__frase {
-  font-family: var(--fonte-titulo);
-  font-style: italic;
-  font-size: 1.3rem;
-  color: var(--verde-mata);
-  margin-bottom: 0.75rem;
-}
-
-.missao__contexto {
-  font-size: 0.95rem;
-  color: var(--terra);
-  margin-bottom: 1.75rem;
-}
-
-.materiais-preview {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-}
-
-.material-preview {
-  display: flex;
-  flex-direction: column;
+  gap: 16px;
   align-items: center;
-  gap: 0.4rem;
-  opacity: 0.75;
 }
-.material-preview:hover { opacity: 1; }
+.lista-materiais-lateral div { text-align: center; }
+.lista-materiais-lateral span { font-size: 22px; display: block; }
+.lista-materiais-lateral p { font-size: 14px; margin-top: 2px; }
 
-.material-preview__icone { font-size: 2.2rem; }
+.frase-missao { font-size: 18px; margin-top: 40px; }
+.link-acessar { margin-top: 10px; padding-bottom: 40px; font-size: 15px; }
 
-.material-preview__nome {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--verde-mata);
-}
+/* --- Blocos de conteúdo (Agrinho.html) ------------------------------------ */
+.bloco { padding: 40px 6%; }
 
-/* --- Botão de acesso central --------------------------------------------------- */
-.cta-central { text-align: center; margin-top: 3rem; }
+.titulo-bloco { font-weight: bold; font-size: 18px; margin-bottom: 10px; }
+.item-titulo { font-weight: bold; margin-top: 18px; }
 
-.botao-acessar {
-  display: inline-block;
-  margin: 1.25rem 0;
-  background-color: var(--verde-mata);
-  color: #fff;
-  padding: 0.95rem 2.4rem;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 700;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-}
-.botao-acessar:hover { background-color: var(--verde-folha); }
+.bloco p { max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 6px; }
 
-/* --- Ícone de reciclagem (index) ------------------------------------------------- */
-.icone-reciclagem {
-  width: 110px;
-  height: 110px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-/* --- Hero com imagem de apoio ------------------------------------------------------ */
-.hero__conteudo {
+/* --- Layout de duas colunas usando a largura toda da tela ------------------- */
+.duas-colunas {
   display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  max-width: 1040px;
-  margin: 0 auto;
-  text-align: left;
-  flex-wrap: wrap;
-}
-.hero__texto { flex: 1 1 400px; }
-.hero__texto h2 { color: #fff; }
-.hero__imagem {
-  flex: 1 1 280px;
-  max-width: 320px;
-  border-radius: 6px;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-  object-fit: cover;
-  max-height: 260px;
-  width: 100%;
-}
-
-/* --- Materiais recicláveis com imagens ---------------------------------------------- */
-.reciclagem__conteudo {
-  display: flex;
-  gap: 2.5rem;
+  justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  gap: 40px;
+  text-align: left;
 }
-.reciclagem__texto { flex: 2 1 480px; }
-.reciclagem__imagens {
-  flex: 1 1 240px;
+
+.duas-colunas .coluna-texto,
+.duas-colunas .coluna-imagens {
+  flex: 1;
+}
+
+.duas-colunas p { margin-left: 0; margin-right: 0; max-width: none; }
+
+.coluna-imagens {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
-.reciclagem__imagens img {
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-  border: 1px solid var(--areia-escura);
-}
-
-/* --- Dicas com imagem -------------------------------------------------------------- */
-.dicas__conteudo {
-  display: flex;
-  gap: 2.5rem;
+  gap: 16px;
   align-items: center;
-  flex-wrap: wrap;
 }
-.dicas__texto { flex: 1 1 380px; }
-.dicas__imagem {
-  flex: 1 1 280px;
-  max-width: 320px;
-  border-radius: 6px;
-  width: 100%;
-}
+.coluna-imagens img { max-width: 320px; }
 
-/* --- Sobre com ícone ----------------------------------------------------------------- */
-.sobre-box--com-imagem {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.sobre-box--com-imagem > div { flex: 2 1 320px; }
-.sobre-box__icone {
-  flex: 1 1 140px;
-  max-width: 150px;
-  object-fit: contain;
-}
+.icone-sobre { max-width: 220px; margin: 0 auto; }
 
-/* --- Responsivo ----------------------------------------------------------------- */
-@media (max-width: 640px) {
-  header { padding: 1.25rem 1.5rem; flex-direction: column; align-items: flex-start; }
-  section { padding: 3rem 1.5rem; }
-  .nav-botoes { gap: 0.5rem; }
-}
+/* --- Rodapé ------------------------------------------------------------------ */
+.rodape { padding: 30px 20px; font-size: 14px; }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .cartao, .perfil-card, .botao-acessar, .nav-botao { }
+/* --- Responsivo ---------------------------------------------------------------- */
+@media (max-width: 700px) {
+  .linha-perfis { flex-direction: column; }
+  .duas-colunas { flex-direction: column; }
 }
