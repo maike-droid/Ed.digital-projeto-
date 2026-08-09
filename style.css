@@ -32,14 +32,14 @@ img { max-width: 100%; display: block; }
 
 .perfil { text-align: center; }
 .perfil img {
-  width: 130px;
-  height: 130px;
+  width: 190px;
+  height: 190px;
   object-fit: cover;
   border-radius: 6px;
 }
 .perfil p { margin-top: 8px; font-size: 15px; }
 
-.icone-central { width: 140px; height: 140px; object-fit: contain; }
+.icone-central { width: 200px; height: 200px; object-fit: contain; }
 
 .lista-materiais-lateral {
   display: flex;
