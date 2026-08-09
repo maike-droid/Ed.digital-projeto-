@@ -12,8 +12,8 @@
   --grafite: #22301F;
   --branco: #FFFFFF;
 
-  --fonte-titulo: 'Fraunces', serif;
-  --fonte-corpo: 'Work Sans', 'Segoe UI', sans-serif;
+  --fonte-titulo: 'Segoe UI', Arial, sans-serif;
+  --fonte-corpo: 'Segoe UI', Arial, sans-serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -36,7 +36,6 @@ a { color: inherit; }
 /* --- Header --------------------------------------------------------- */
 header {
   background-color: var(--verde-mata);
-  background-image: radial-gradient(circle at 15% 30%, rgba(143, 209, 158, 0.15), transparent 55%);
   color: #fff;
   padding: 1.5rem 2.5rem;
   display: flex;
@@ -64,7 +63,6 @@ nav a {
   color: #fff;
   padding: 0.4rem 0.2rem;
   border-bottom: 2px solid transparent;
-  transition: border-color 0.2s ease, color 0.2s ease;
 }
 nav a:hover { border-color: var(--verde-brotinho); color: var(--verde-brotinho); }
 
@@ -74,14 +72,12 @@ nav a:hover { border-color: var(--verde-brotinho); color: var(--verde-brotinho);
 .nav-botao {
   text-decoration: none;
   padding: 0.55rem 1.1rem;
-  border-radius: 999px;
+  border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.18);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
   border-bottom: none;
 }
-.nav-botao:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,0.22); }
 
 .nav-botao--claro { background-color: var(--verde-folha); color: #fff; }
 .nav-botao--escuro { background-color: var(--verde-mata); color: #fff; border: 1px solid rgba(255,255,255,0.25); }
@@ -150,18 +146,13 @@ section h2 {
 
 .cartao {
   background-color: var(--branco);
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 1.75rem;
-  box-shadow: 0 6px 16px rgba(27, 67, 50, 0.08);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
   flex: 1;
   min-width: 210px;
   text-align: center;
   border: 1px solid var(--areia-escura);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.cartao:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(27, 67, 50, 0.14);
 }
 
 .cartao .icone { font-size: 2.1rem; margin-bottom: 0.65rem; }
@@ -183,7 +174,7 @@ section h2 {
   border-radius: 10px;
   border-left: 4px solid var(--verde-mata);
   font-size: 0.95rem;
-  box-shadow: 0 3px 10px rgba(27, 67, 50, 0.06);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
 
 /* --- Tabela --------------------------------------------------------------- */
@@ -192,9 +183,9 @@ table {
   border-collapse: collapse;
   margin-top: 1.5rem;
   background-color: var(--branco);
-  border-radius: 12px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 6px 16px rgba(27, 67, 50, 0.08);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
 
 th {
@@ -213,9 +204,9 @@ tr:hover td { background-color: var(--areia); }
 /* --- Sobre o projeto -------------------------------------------------------- */
 .sobre-box {
   background-color: var(--branco);
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 2rem;
-  box-shadow: 0 6px 16px rgba(27, 67, 50, 0.08);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
 
 .sobre-box p { color: var(--grafite); }
@@ -228,7 +219,7 @@ tr:hover td { background-color: var(--areia); }
   background-color: var(--verde-mata);
   color: #fff;
   padding: 0.5rem 1.2rem;
-  border-radius: 999px;
+  border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -251,20 +242,19 @@ footer p:first-child { margin-top: 0; }
 
 .perfil-card {
   background-color: var(--branco);
-  border-radius: 16px;
+  border-radius: 6px;
   padding: 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(27, 67, 50, 0.1);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
   max-width: 260px;
   border: 1px solid var(--areia-escura);
-  transition: transform 0.2s ease;
 }
-.perfil-card:hover { transform: translateY(-4px); }
+
 
 .perfil-card img {
   width: 80px;
   height: 80px;
-  border-radius: 12px;
+  border-radius: 6px;
   object-fit: cover;
   border: 3px solid var(--verde-folha);
   margin-bottom: 0.9rem;
@@ -303,9 +293,8 @@ footer p:first-child { margin-top: 0; }
   align-items: center;
   gap: 0.4rem;
   opacity: 0.75;
-  transition: opacity 0.2s ease, transform 0.2s ease;
 }
-.material-preview:hover { opacity: 1; transform: translateY(-3px); }
+.material-preview:hover { opacity: 1; }
 
 .material-preview__icone { font-size: 2.2rem; }
 
@@ -324,14 +313,13 @@ footer p:first-child { margin-top: 0; }
   background-color: var(--verde-mata);
   color: #fff;
   padding: 0.95rem 2.4rem;
-  border-radius: 999px;
+  border-radius: 20px;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 700;
-  box-shadow: 0 6px 16px rgba(27, 67, 50, 0.25);
-  transition: background-color 0.2s ease, transform 0.15s ease;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
-.botao-acessar:hover { background-color: var(--verde-folha); transform: translateY(-2px); }
+.botao-acessar:hover { background-color: var(--verde-folha); }
 
 /* --- Ícone de reciclagem (index) ------------------------------------------------- */
 .icone-reciclagem {
@@ -356,8 +344,8 @@ footer p:first-child { margin-top: 0; }
 .hero__imagem {
   flex: 1 1 280px;
   max-width: 320px;
-  border-radius: 16px;
-  box-shadow: 0 10px 26px rgba(0,0,0,0.28);
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
   object-fit: cover;
   max-height: 260px;
   width: 100%;
@@ -379,8 +367,8 @@ footer p:first-child { margin-top: 0; }
 }
 .reciclagem__imagens img {
   width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(27, 67, 50, 0.1);
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
   border: 1px solid var(--areia-escura);
 }
 
@@ -395,7 +383,7 @@ footer p:first-child { margin-top: 0; }
 .dicas__imagem {
   flex: 1 1 280px;
   max-width: 320px;
-  border-radius: 14px;
+  border-radius: 6px;
   width: 100%;
 }
 
@@ -422,5 +410,5 @@ footer p:first-child { margin-top: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .cartao, .perfil-card, .botao-acessar, .nav-botao { transition: none; }
+  .cartao, .perfil-card, .botao-acessar, .nav-botao { }
 }
